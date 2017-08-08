@@ -1,3 +1,5 @@
+(function(scope){
+    
 var Foo = function(name){
     this.name = name
 }
@@ -10,3 +12,11 @@ Foo.prototype._write = function(){
 Foo.write = function(){
     console.log(" method static");
 }
+
+scope.Foo = Foo;
+
+}(window.myNamespace));
+
+
+
+
